@@ -11,4 +11,4 @@ document.getElementById('payment-form').addEventListener('submit', function (e) 
     alert('Payment Successful! Thank you for your purchase.');
     localStorage.clear(); // Clear stored data
     window.location.href = 'index.html'; // Redirect back to home page
-});
+})

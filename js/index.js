@@ -41,12 +41,12 @@ document.querySelector('form').addEventListener('submit', async function (e) {
         alert(result.message);
 
         if (response.ok) {
-            window.location.href = '/login.html'; // Redirect to login page if needed
+            window.location.href = 'login.html'; // Redirect to login page if needed
         }
     } catch (error) {
         console.error('Error:', error);
         alert('Something went wrong!');
-    }
+}
 });
 //login page
 document.querySelector('#loginForm').addEventListener('submit', async function (e) {
@@ -77,5 +77,5 @@ document.querySelector('#loginForm').addEventListener('submit', async function (
     } catch (error) {
         console.error('Error:', error);
         alert('Something went wrong!');
-    }
+}
 });

@@ -49,3 +49,38 @@ async function fetchProducts() {
     const products=await res.json();
     renderProducts(products);
 }
+// Handle "Book Now" Button Click
+document.querySelectorAll('.two').forEach(button => {
+    button.addEventListener('click', (e) => {
+        const card = e.target.closest('.card'); // Get the parent card
+        const productName = card.querySelector('h3').innerText;
+        const productPrice = card.querySelector('h3:nth-of-type(2)').innerText;
+
+        // Display popup with product details
+        document.getElementById('popupText').innerText =
+           `Are you sure you want to buy "${productName}" for ${productPrice}?`;
+
+        // Show popup modal
+        document.getElementById('popupModal').style.display = 'block';
+
+        // Handle Yes button click
+        document.getElementById('yesBtn').onclick = () => {
+            localStorage.setItem('productName', productName);
+            localStorage.setItem('productPrice', productPrice);
+            window.location.href = 'payment.html'; // Redirect to payment page
+        };
+
+        // Handle No button click
+        document.getElementById('noBtn').onclick = () => {
+            document.getElementById('popupModal').style.display = 'none';
+        };
+    });
+});
+
+// Close modal if clicked outside
+window.onclick = function (event) {
+    const modal = document.getElementById('popupModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+}
+};

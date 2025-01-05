@@ -26,5 +26,5 @@ document.querySelector('#loginForm').addEventListener('submit', async function (
     } catch (error) {
         console.error('Error:', error);
         alert('Something went wrong!');
-    }
+}
 });
