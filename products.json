@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "name":"Men's Leather Jacket",
+        "price":120.99,
+        "image":"https:via.placholder.com/200*200?text=Jacket"
+    },
+    {
+        "id":2,
+        "name":"Women's Dress",
+        "price":89.99,
+        "image":"https:via.placholder.com/200*200?text=Dress"
+    },
+    {
+        "id":3,
+        "name":"Running Shoes",
+        "price":120.99,
+        "image":"https:via.placholder.com/200*200?text=Shoes"
+    },
+    {
+        "id":4,
+        "name":"Men's Watch",
+        "price":120.99,
+        "image":"https:via.placholder.com/200*200?text=Watch"
+    },
+    {
+        "id":1,
+        "name":"Men's Leather Jacket",
+        "price":120.99,
+        "image":"https:via.placholder.com/200*200?text=Dress"
+    },
+    {
+        "id":1,
+        "name":"Men's Leather Jacket",
+        "price":120.99,
+        "image":"https:via.placholder.com/200*200?text=Dress"
+    },
+    {
+        "id":1,
+        "name":"Men's Leather Jacket",
+        "price":120.99,
+        "image":"https:via.placholder.com/200*200?text=Dress"
+    }
+]

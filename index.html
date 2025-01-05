@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordstrom Rack</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+        <div id="container">
+            <div id="navbar"></div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search products..." />
+                <button id="search-btn">Search</button>
+            </div>
+        </nav>
+        <main>
+            <form id="product-form">
+                <input type="text" id="name" placeholder="Product Name" required />
+                <input type="number" id="price" placeholder="Price" required />
+                <input type="text" id="category" placeholder="Category" required />
+                <button type="submit">Add Product</button>
+            </form>
+            <div id="product-list"></div>
+            <div id="filters">
+                <select id="sort" onchange="fetchProducts()">
+                    <option value="asc">Price Low to High</option>
+                    <option value="desc">Price High to Low</option>
+                </select>
+                <select id="category-filter" onchange="fetchProducts()">
+                    <option value="">All Categories</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="shoes">Shoes</option>
+                </select>
+            </div>
+        </main>
+    <header>
+    <section class="hero">
+        <h2>Up to 60% off Top Brands</h2>
+        <div id="product-list" class="product-container"></div>
+    </section>
+</header>
+            
+            <div id="main">
+                <h1 id="header">Welcome to Diseño</h1>
+                <h3>Designs</h3>
+                     <article>    
+                                <div class="details">            
+                                    <p>
+                                        Clothes, beyond their practical function of covering the body, serve as a powerful medium for self-expression through design, allowing individuals to showcase their personality, cultural identity, and personal style. From intricate patterns and bold colors to minimalist cuts and subtle details, clothing design encompasses a vast array of aesthetic choices that can reflect a wearer's mood, social status, and even political views. Fashion designers constantly push creative boundaries, incorporating new materials, textures, and silhouettes into their creations, ensuring that clothes are not just garments but dynamic expressions of individual identity.
+                                        
+                                    </p>
+                                    <div class="grid">
+                                        <div class="card">
+                                       <img src="https://i.pinimg.com/736x/1c/6b/ce/1c6bce3902051492e160e5eab7017e90.jpg" alt="image";width="250px"/>
+                                       <h3>Design</h3>
+                                       <p>Our all design has there own uniqueness</p>
+                                       <h3>Price:2000$</h3>
+                                       <div class="button">
+                                        <button class="one">Know more</button>
+                                        <button class="two">Book Now</button>
+                                    </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="https://i.pinimg.com/736x/6f/aa/3a/6faa3abd5c395641077414867055a325.jpg" alt="image" />
+                                        <h3>Design</h3>
+                                        <p>Our all design has there own uniqueness</p>
+                                        <h3>Price:2050$</h3>
+                                        <div class="button">
+                                            <button class="one">Know more</button>
+                                            <button class="two">Book Now</button>
+                                        </div>
+                                     </div>
+                                     <div class="card">
+                                        <img src="https://i.pinimg.com/736x/4f/e4/34/4fe4340c79fdb06a756313180b2310e8.jpg" alt="image"/>
+                                        <h3>Design</h3>
+                                        <h3>Price:2500$</h3>
+                                        <p>Our all design has there own uniqueness</p>
+                                        <div class="button">
+                                            <button class="one">Know more</button>
+                                            <button class="two">Book Now</button>
+                                        </div>
+                                     </div>
+                                     <div class="card">
+                                        <img src="https://i.pinimg.com/736x/77/13/23/771323422a5051869e7056ba0ac058cd.jpg" alt="image"/>
+                                        <h3>Design</h3>
+                                        <p>Our all design has there own uniqueness</p>
+                                        <h3>Price:2200$</h3>
+                                        <div class="button">
+                                            <button class="one">Know more</button>
+                                            <button class="two">Book Now</button>
+                                        </div>
+                                     </div>
+                                     <div class="card">
+                                        <img src="https://i.pinimg.com/736x/6b/3d/6f/6b3d6feff5f105ec32fd9031e6ff7cd4.jpg" alt="image"/>
+                                        <h3>Design</h3>
+                                        <p>Our all design has there own uniqueness</p>
+                                        <h3>Price:3000$</h3>
+                                        <div class="button">
+                                            <button class="one">Know more</button>
+                                            <button class="two">Book Now</button>
+                                        </div>
+                                     </div>
+                                     <div class="card">
+                                        <img src="https://i.pinimg.com/736x/fe/cc/6d/fecc6ded4f2f7fdf38a7745381034d09.jpg" alt="image"/>
+                                        <h3>Design</h3>
+                                        <p>Our all design has there own uniqueness</p>
+                                        <h3>Price:1500$</h3>
+                                        <div class="button">
+                                            <button class="one">Know more</button>
+                                            <button class="two">Book Now</button>
+                                        </div>
+                                     </div>
+                                     <div class="card">
+                                        <img src="https://i.pinimg.com/736x/25/3b/5f/253b5f64ca1af27317408b51f5dcaabd.jpg" alt="image"/>
+                                        <h3>Design</h3>
+                                        <p>Our all design has there own uniqueness</p>                                       <h3>Price:1800$</h3>
+                                        <div class="button">
+                                            <button class="one">Know more</button>
+                                            <button class="two">Book Now</button>
+                                        </div>
+                                     </div>
+                                     <div class="card">
+                                        <img src="https://i.pinimg.com/736x/1c/66/86/1c66860f30badefec96f2778cd0c165f.jpg" alt="image"/>
+                                        <h3>Design</h3>
+                                        <p>Our all design has there own uniqueness</p>                                       <h3>Price:2095$</h3>
+                                        <div class="button">
+                                            <button class="one">Know more</button>
+                                            <button class="two">Book Now</button>
+                                        </div>
+                                     </div>
+                                     <div class="card">
+                                        <img src="https://i.pinimg.com/736x/4c/e2/c6/4ce2c62d66b8b222b9208b641a40ba8b.jpg" alt="image"/>
+                                        <h3>Design</h3>
+                                        <p>Our all design has there own uniqueness</p>
+                                        <h3>Price:2300$</h3>
+                                        <div class="button">
+                                            <button class="one">Know more</button>
+                                            <button class="two">Book Now</button>
+                                        </div>
+                                     </div>
+                                    </div>
+                                </div>
+                    </article>
+            </div>
+        <div id ="footer"></div>
+        </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
